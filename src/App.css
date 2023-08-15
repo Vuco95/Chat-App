@@ -1,0 +1,184 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../Files/pozadina.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.App-header {
+  background-image: url(../Files/Pleter1.png);
+  background-size: contain;
+  background-position: center;
+  background-color: #ffffff5d;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.Messages-list {
+  background-color: rgba(0, 0, 0, 0.226);
+  padding: 20px 0;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow: auto;
+}
+
+.Messages-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+}
+
+.currentMember > .Message-content {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.Messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.Message-content > .username {
+  display: block;
+  color: black;
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+.Message-content > .text {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: rgba(70, 113, 194, 0.7);
+  color: white;
+  display: inline-block;
+}
+
+.currentMember > .Message-content .text {
+  background-color: rgba(155, 28, 28, 0.7);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid orangered;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.GenderQuestion {
+  background-image: url('../Files/pozadina.jpg');
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.GenderQuestion h2 {
+  font-size: 24px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: #962323d5;
+}
+
+.GenderQuestion button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #aa511ec4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+.GenderQuestion .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.GenderQuestion button:hover {
+  background-color: #8d2e2ec4;
+}
